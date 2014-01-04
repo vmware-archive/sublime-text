@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+${1:touch-}${2:filename}:
+	file.touch:
+		- name: ${3:${2}}
+		- atime: ${4:201401011700}
+		- mtime: ${5:201401011700}
+		- makedirs: ${6:False}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>file-touch</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.yaml</scope>
+	<description>Touch a file to set atime/mtime (SaltStack).</description>
+</snippet>

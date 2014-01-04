@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[{% do ${1:expr} %}]]></content>
+	<tabTrigger>do</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>do</description>
+</snippet>

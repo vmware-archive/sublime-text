@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[{% for ${1:item} in ${2:sequence} %}
+	$3
+{% endfor %}]]></content>
+	<tabTrigger>for</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>for</description>
+</snippet>

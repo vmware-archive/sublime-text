@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[{% block ${1:name} %}
+	$2
+{% endblock %}]]></content>
+	<tabTrigger>block</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>block</description>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+${1:/etc/fstab}:
+	file.uncomment:
+		- regex: ${2:bind 127.0.0.1}
+		- char: ${3:#}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>file-uncomment</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.yaml</scope>
+	<description>Uncomment line(s) of a file (SaltStack).</description>
+</snippet>

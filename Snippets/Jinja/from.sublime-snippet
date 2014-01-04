@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[{% from ${1:"${2:template}"} import ${3:name} %}]]></content>
+	<tabTrigger>from</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>from</description>
+</snippet>

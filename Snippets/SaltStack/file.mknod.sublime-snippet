@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+ /dev/${1:chr}:
+	 file.mknod:
+		- ntype: ${2:c}
+		- major: ${3:180}
+		- minor: ${4:31}
+		- user: ${5:root}
+		- group: ${6:${5}}
+		- mode: ${7:660}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>file-mknod</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.yaml</scope>
+	<description>Create special file (ala mknod) (SaltStack).</description>
+</snippet>

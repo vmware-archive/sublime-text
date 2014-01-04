@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[{% else %}]]></content>
+	<tabTrigger>else</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>else</description>
+</snippet>

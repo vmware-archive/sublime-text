@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+${1:apache}:
+	pkg:
+		- installed
+		- version: ${2:2.2.23}
+	service.running:
+		- enable: True
+		- require:
+			- pkg: ${1}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pkg</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.yaml</scope>
+	<description>Define an installed package/service (SaltStack).</description>
+</snippet>

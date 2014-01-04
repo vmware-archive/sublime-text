@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[{% break %}]]></content>
+	<tabTrigger>break</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>break</description>
+</snippet>

@@ -1,0 +1,75 @@
+<snippet>
+	<content><![CDATA[
+${1:eth0}:
+	network.managed:
+		- type: slave
+		- master: ${2:bond0}
+
+${3:eth1}:
+	network.managed:
+		- type: slave
+		- master: ${2}
+
+${2}:
+	network.managed:
+		- type: bond
+		- ipaddr: ${4:10.1.0}.${5:1}
+		- netmask: ${6:255.255.255.0}
+		- dns:
+			- ${7:8.8.8.8}
+			- ${8:8.8.4.4}
+		- ipv6:
+		- enabled: False
+		- use_in:
+			- network: ${1}
+			- network: ${3}
+		- require:
+			- network: ${1}
+			- network: ${3}
+		- mode: 802.3ad
+		- miimon: 100
+		- arp_interval: 250
+		- downdelay: 200
+		- lacp_rate: fast
+		- max_bonds: 1
+		- updelay: 0
+		- use_carrier: on
+		- xmit_hash_policy: layer2
+		- mtu: 9000
+		- autoneg: on
+		- speed: 1000
+		- duplex: full
+		- rx: on
+		- tx: off
+		- sg: on
+		- tso: off
+		- ufo: off
+		- gso: off
+		- gro: off
+		- lro: off
+
+${2}.2:
+	network.managed:
+		- type: vlan
+		- ipaddr: ${4}.${9:2}
+		- use:
+			- network: ${2}
+		- require:
+			- network: ${2}
+
+${2}.3:
+	network.managed:
+		- type: vlan
+		- ipaddr: ${4}.${10:3}
+		- use:
+			- network: ${2}
+		- require:
+			- network: ${2}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>network-managed-bond</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.yaml</scope>
+	<description>Ensure that the named channel-bond is configured properly (SaltStack).</description>
+</snippet>

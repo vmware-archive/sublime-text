@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[{% extends ${1:"${2:template}"} %}]]></content>
+	<tabTrigger>extends</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>extends</description>
+</snippet>

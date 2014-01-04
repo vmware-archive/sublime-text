@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+${1:system-networking}:
+	network.system:
+		- enabled: ${2:True}
+		- nisdomain: ${3:example.com}
+		- hostname: ${4:server1}.${3}
+		- gateway: ${5:192.168.0.1}
+		- gatewaydev: ${6:eth0}
+		- nozeroconf: ${7:True}
+		- require_reboot: ${8:True}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>network-system</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.yaml</scope>
+	<description>Ensure that global network settings are configured properly (SaltStack).</description>
+</snippet>

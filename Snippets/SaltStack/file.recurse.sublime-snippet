@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+${1:recurse-}${2:directory}:
+	file.recurse:
+		- name: ${3:${2}}
+		- source: ${4:salt:/${2}}
+		- clean: ${5:False}
+		- user: ${6:root}
+		- group: ${7:${6}}
+		- dir_mode: ${8:755}
+		- file_mode: ${9:644}
+		- include_empty: ${10:False}
+		- keep_symlinks: ${11:True}
+		- template: jinja
+		- defaults:
+				${12:custom_var}: ${13:"default value"}
+{% if grains['os'] == '${14:Ubuntu}' %}
+		- context:
+				${12}: ${15:"override value"}
+{% endif %}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>file-recurse</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.yaml</scope>
+	<description>Recursively copy a directory (SaltStack).</description>
+</snippet>

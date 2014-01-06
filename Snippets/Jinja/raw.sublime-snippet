@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[{% raw %}
+	$1
+{% endraw %}]]></content>
+	<tabTrigger>raw</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>raw</description>
+</snippet>

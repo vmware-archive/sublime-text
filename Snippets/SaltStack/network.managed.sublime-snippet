@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+${1:eth0}:
+	network.managed:
+		- enabled: ${2:True}
+		- type: ${3:eth}
+		- proto: ${4:none}
+		- ipaddr: ${5:10.1.0.1}
+		- netmask: ${6:255.255.255.0}
+		- dns:
+			- ${7:8.8.8.8}
+			- ${8:8.8.4.4}
+		- miimon: 100
+		- arp_interval: 250
+		- downdelay: 200
+		- updelay: 0
+		- mtu: 9000
+		- autoneg: on
+		- speed: ${9:1000}
+		- duplex: full
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>network-managed</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.yaml</scope>
+	<description>Ensure that the named interface is configured properly (SaltStack).</description>
+</snippet>

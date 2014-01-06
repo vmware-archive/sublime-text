@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[{{ super() }}]]></content>
+	<tabTrigger>super</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>super</description>
+</snippet>

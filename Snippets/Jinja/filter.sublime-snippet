@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[{% filter ${1:filter} %}
+	$2
+{% endfilter %}]]></content>
+	<tabTrigger>filter</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>filter</description>
+</snippet>

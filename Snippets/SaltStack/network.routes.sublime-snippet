@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+${1:routes-}${2:eth0}:
+	network.routes:
+		- name: ${3:${2}}
+		- routes:
+			- name: ${4:secure_network}
+				ipaddr: ${5:10.2.0.0}
+				netmask: ${6:255.255.255.0}
+				gateway: ${7:10.1.0.3}
+			- name: ${8:HQ_network}
+				ipaddr: ${9:10.100.0.0}
+				netmask: ${10:255.255.0.0}
+				gateway: ${11:10.1.0.10}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>network-routes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.yaml</scope>
+	<description>Manage network interface static routes (SaltStack).</description>
+</snippet>

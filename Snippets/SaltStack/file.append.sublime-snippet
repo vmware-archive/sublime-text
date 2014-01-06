@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+${1:/etc/motd}:
+	file.append:
+		- sources:
+			- ${2:salt:/${1}.tmpl}
+		- template: jinja
+		- defaults:
+				${3:custom_var}: ${4:"default value"}
+{% if grains['os'] == '${5:Ubuntu}' %}
+		- context:
+				${3}: ${6:"override value"}
+{% endif %}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>file-append</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.yaml</scope>
+	<description>Append text to a file (SaltStack).</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+${1:patch-}${2:filename}:
+	file.patch:
+		- name: ${3:${2}}
+		- source: ${4:salt:/${2}}.patch
+		- dry_run_first: ${5:True}
+		- hash: ${6:md5}=${7:e138491e9d5b97023cea823fe17bac22}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>file-patch</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.yaml</scope>
+	<description>Apply a patch to specified file (SaltStack).</description>
+</snippet>

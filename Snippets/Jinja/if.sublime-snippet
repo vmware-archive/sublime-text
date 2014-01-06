@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[{% if ${1:expr} %}
+	$2
+{% endif %}]]></content>
+	<tabTrigger>if</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>if</description>
+</snippet>

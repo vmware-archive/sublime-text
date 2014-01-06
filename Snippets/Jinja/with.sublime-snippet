@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[{% with ${1:variable} = ${2:value} %}
+	${3:$SELECTION}
+{% endwith %}]]></content>
+	<tabTrigger>with</tabTrigger>
+	<scope>source.yaml</scope>
+	<description>with</description>
+</snippet>

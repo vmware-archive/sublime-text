@@ -3,6 +3,6 @@
 	$2
 {% endblock %}]]></content>
 	<tabTrigger>block</tabTrigger>
-	<scope>source.yaml</scope>
+	<scope>source.sls</scope>
 	<description>block</description>
 </snippet>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[{% trans %}${1:$SELECTION}{% endtrans %}]]></content>
 	<tabTrigger>trans</tabTrigger>
-	<scope>source.yaml</scope>
+	<scope>source.sls</scope>
 	<description>trans</description>
 </snippet>

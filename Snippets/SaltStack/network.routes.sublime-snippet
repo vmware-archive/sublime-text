@@ -17,6 +17,6 @@ ${1:routes-}${2:eth0}:
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>network-routes</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.yaml</scope>
+	<scope>source.sls</scope>
 	<description>Manage network interface static routes (SaltStack).</description>
 </snippet>

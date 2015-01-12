@@ -8,6 +8,6 @@ ${1:remove-group-}${2:name}:
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>group-absent</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.yaml</scope>
+	<scope>source.sls</scope>
 	<description>Ensure that the named group is absent (SaltStack).</description>
 </snippet>

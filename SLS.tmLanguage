@@ -31,7 +31,7 @@
 		<!-- Highlighting of boolean constants -->
 		<dict>
 			<key>match</key>
-			<string>((-)\s*)?((([\w\/].*)|(\"[\w\/].*\")|(\'[\w\/].*\'))(:))?\s*((true|false)|(null|\~))\s*(\#.*)?</string>
+			<string>((-)\s*)?((([\w\/].*)|(\"[\w\/].*\")|(\'[\w\/].*\'))(:))?\s*(?i)((true|false)|(null|\~))(?-i)\s*(\#.*)?</string>
 			<key>name</key>
 			<string>meta.tag.yaml</string>
 			<key>captures</key>

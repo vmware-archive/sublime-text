@@ -28,8 +28,12 @@
 			<string>source.jinja</string>
 		</dict>
 
-		<!-- Improve highlighting of lists and dictionaries in general -->
+		<!-- Highlighting of boolean constants -->
 		<dict>
+			<key>match</key>
+			<string>((-)\s*)?((([\w\/].*)|(\"[\w\/].*\")|(\'[\w\/].*\'))(:))?\s*((true|false)|(null|\~))\s*(\#.*)?</string>
+			<key>name</key>
+			<string>meta.tag.yaml</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -37,33 +41,96 @@
 					<key>name</key>
 					<string>punctuation.definition.entry.yaml</string>
 				</dict>
-				<key>2</key>
+				<key>4</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.tag.yaml</string>
 				</dict>
-				<key>3</key>
+				<key>6</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.double.yaml</string>
+				</dict>
+				<key>7</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.single.yaml</string>
+				</dict>
+				<key>8</key>
 				<dict>
 					<key>name</key>
 					<string>punctuation.separator.key-value.yaml</string>
 				</dict>
-				<key>5</key>
+				<key>10</key>
 				<dict>
 					<key>name</key>
-					<string>constant.numeric.yaml</string>
+					<string>constant.boolean.yaml</string>
 				</dict>
-				<key>15</key>
+				<key>11</key>
+				<dict>
+					<key>name</key>
+					<string>constant.null.yaml</string>
+				</dict>
+				<key>12</key>
 				<dict>
 					<key>name</key>
 					<string>comment.line.yaml</string>
 				</dict>
 			</dict>
+		</dict>
+
+		<!-- Improve highlighting of numeric values -->
+		<dict>
 			<key>match</key>
-			<string>(?:(?:(-\s*)?(\w+\s*)(:))|(-))\s*((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f)?\s*(\#.*)?$</string>
+			<string>((-)\s*)?((([\w\/].*)|(\"[\w\/].*\")|(\'[\w\/].*\'))(:))?\s*(((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f)?)\s*(\#.*)?</string>
 			<key>name</key>
 			<string>meta.tag.yaml</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.entry.yaml</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.yaml</string>
+				</dict>
+				<key>6</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.double.yaml</string>
+				</dict>
+				<key>7</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.single.yaml</string>
+				</dict>
+				<key>8</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.separator.key-value.yaml</string>
+				</dict>
+				<key>9</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.yaml</string>
+				</dict>
+				<key>20</key>
+				<dict>
+					<key>name</key>
+					<string>comment.line.yaml</string>
+				</dict>
+			</dict>
 		</dict>
+
+		<!-- Improve highlighting of unquoted strings -->
 		<dict>
+			<key>match</key>
+			<string>(?:(?:(-\s*)?(\w+\s*)(:))|(-))\s*(?:((")[^"]*("))|((')[^']*('))|([^,{}&amp;#\[\]]+))\s*</string>
+			<key>name</key>
+			<string>meta.tag.yaml</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -122,10 +189,6 @@
 					<string>string.unquoted.yaml</string>
 				</dict>
 			</dict>
-			<key>match</key>
-			<string>(?:(?:(-\s*)?(\w+\s*)(:))|(-))\s*(?:((")[^"]*("))|((')[^']*('))|([^,{}&amp;#\[\]]+))\s*</string>
-			<key>name</key>
-			<string>meta.tag.yaml</string>
 		</dict>
 
 		<!-- Allow YAML keys to begin with / -->

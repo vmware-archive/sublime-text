@@ -3,6 +3,6 @@
 	$3
 {% endmacro %}]]></content>
 	<tabTrigger>macro</tabTrigger>
-	<scope>source.yaml</scope>
+	<scope>source.sls</scope>
 	<description>macro</description>
 </snippet>

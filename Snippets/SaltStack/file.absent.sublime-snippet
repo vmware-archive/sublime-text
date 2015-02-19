@@ -8,6 +8,6 @@ ${1:delete-}${2:filename}:
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>file-absent</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.yaml</scope>
+	<scope>source.sls</scope>
 	<description>Delete a file (SaltStack).</description>
 </snippet>

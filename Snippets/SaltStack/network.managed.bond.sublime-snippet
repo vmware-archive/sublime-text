@@ -70,6 +70,6 @@ ${2}.3:
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>network-managed-bond</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.yaml</scope>
+	<scope>source.sls</scope>
 	<description>Ensure that the named channel-bond is configured properly (SaltStack).</description>
 </snippet>

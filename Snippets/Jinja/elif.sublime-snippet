@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[{% elif ${1:expr} %}]]></content>
 	<tabTrigger>elif</tabTrigger>
-	<scope>source.yaml</scope>
+	<scope>source.sls</scope>
 	<description>elif</description>
 </snippet>

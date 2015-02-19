@@ -14,6 +14,6 @@ ${1:system-networking}:
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>network-system</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.yaml</scope>
+	<scope>source.sls</scope>
 	<description>Ensure that global network settings are configured properly (SaltStack).</description>
 </snippet>

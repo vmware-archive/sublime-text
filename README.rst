@@ -8,6 +8,7 @@ for the Sublime Text editor.
 Installation
 ------------
 *Package Control for Sublime Text is not ready yet.*
+
 1. Clone this repository directly inside your Package folder for sublime text:
 
     http://docs.sublimetext.info/en/latest/basic_concepts.html#the-packages-directory

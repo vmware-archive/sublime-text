@@ -7,9 +7,8 @@ for the Sublime Text editor.
 
 Installation
 ------------
-#. Install *Package Control* for Sublime Text by following these instructions:
-   https://sublime.wbond.net/installation
-#. Install the SaltStack package:
-   ``Preferences -> Package Control -> Package Control: Install Package``
+#. Install *Package Control* for Sublime Text is not ready yet. 
+#. Clone this repository directly inside your Package folder for sublime text.
+#. Restart your sublime application
 
-   Type in ``saltstack`` and hit Enter/Return
+#. Forked from https://github.com/saltstack/sublime-text

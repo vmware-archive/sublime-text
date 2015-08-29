@@ -25,7 +25,7 @@
 	<array>
 		<dict>
 			<key>include</key>
-			<string>source.jinja</string>
+			<string>source.jinja2</string>
 		</dict>
 
 		<!-- Highlighting of boolean constants -->

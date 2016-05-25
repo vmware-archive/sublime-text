@@ -1,0 +1,26 @@
+%YAML 1.2
+---
+name: Salt State (SLS)
+file_extensions:
+  - sls
+
+scope: source.sls
+
+contexts:
+  main:
+    # this is a copy of the comment definition from the official YAML syntax.
+    # it needs to be defined before the jinja2 syntax to work properly
+    - match: |
+        (?x)
+        (?: ^ [ \t]* | [ \t]+ )
+        (?:(\#) \p{Print}* )?
+        (\n|\z)
+      scope: comment.line.number-sign.yaml
+      captures:
+        1: punctuation.definition.comment.line.number-sign.yaml
+
+    # the jinja2 syntax needs to be included before the yaml syntax in order
+    # for it to take precedence. if yaml gets included first, {{ }} are very
+    # rarely highlighted
+    - include: 'scope:source.jinja2'
+    - include: 'scope:source.yaml'
